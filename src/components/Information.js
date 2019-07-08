@@ -6,7 +6,7 @@ const Information = () => (
       <Col >
     <Button color="info" id="toggler" size="lg" block
     style={{ marginBottom: '1rem' }}>
-      About this tool <span role="img" aria-label="wow face">😮🤔</span>
+      About this tool <span role="img" aria-label="wow face">😮</span>
     </Button>
     </Col>
     <UncontrolledCollapse toggler="#toggler">
