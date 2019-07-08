@@ -27,7 +27,7 @@ export default class NavBar extends React.Component {
     return (
       <div>
         <Navbar light expand="md" color="info">
-          <NavbarBrand href="/">Markdown Preview</NavbarBrand>
+          <NavbarBrand href="https://samk13.github.io/markdown-preview-v001/">Markdown Preview</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
