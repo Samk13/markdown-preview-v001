@@ -39,3 +39,7 @@ code {
   background-image: url(https://cdn.pixabay.com/photo/2018/01/24/18/05/background-3104413_1280.jpg) ;
   background-size: 1500px;
 }
+
+Navbar{
+  font-weight: 500;
+}

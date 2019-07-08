@@ -26,17 +26,17 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar light expand="md" color="info">
-          <NavbarBrand href="https://samk13.github.io/markdown-preview-v001/">Markdown Preview</NavbarBrand>
+        <Navbar fixed='top' light expand="md" color="info">
+          <NavbarBrand style={{fontWeight:500}}href="https://samk13.github.io/markdown-preview-v001/">Markdown Preview</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
 
               <NavItem>
-                <NavLink href="https://github.com/Samk13" target='_blank'>MyGitHub</NavLink>
+                <NavLink style={{fontWeight:500}}href="https://github.com/Samk13" target='_blank'>MyGitHub</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://www.linkedin.com/in/samarbid/" target='_blank' >LinkedIn</NavLink>
+                <NavLink style={{fontWeight:500}}href="https://www.linkedin.com/in/samarbid/" target='_blank' >LinkedIn</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://www.freecodecamp.org/sam_arbid" target='_blank' >FCC</NavLink>
