@@ -1,13 +1,15 @@
 import React from 'react'
 import marked from 'marked'
-import hljs from 'highlight.js';
 import 'bootstrap/dist/css/bootstrap.css';
 import NavBar from './components/NavBar'
+import Information from './components/Information'
 import { Button, FormGroup, Label, Input, Jumbotron, Container, Row, Col } from 'reactstrap';
+import Header from './components/Header'
 
 
 const initialMarkdown = `
 ### Headers
+[see Wikipedia](https://en.wikipedia.org/wiki/Markdown)
 # Header 1
 ## Header 2
 ### Header 3
@@ -47,9 +49,6 @@ renderer.link = function (href, title, text) {
 marked.setOptions({
   renderer: renderer,
   breaks: true,
-  highlight: function (code) {
-    return hljs.highlightAuto(code).value
-  }
 })
 
 class App extends React.Component {
@@ -67,12 +66,16 @@ class App extends React.Component {
 
       <div>
         <NavBar />
-        <Jumbotron fluid className='Jumbotron'>
+        <Header />
+        {/* <Jumbotron fluid className='Jumbotron'>
           <h1 className="display-3 text-center text-success ">🛰Markdown Preview 🛰</h1>
           <p className="lead text-center text-warning">This is my markdown App from FCC Front End Libraries Project created by Sam Arbid </p>
 
-        </Jumbotron>
+        </Jumbotron> */}
+        <Information />
+
         <Button color="primary" size="lg" block onClick={() => this.setState({ markdown: '' })}>ClearText</Button>
+
         <br />
 
         <Container>
