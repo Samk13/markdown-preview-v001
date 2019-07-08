@@ -10,4 +10,32 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+    background-color: rgb(175, 175, 175);
+    color: rgb(17, 153, 4);
+    border-radius: 10px;
+}
+
+
+.left {
+  height: 90vh;
+}
+.right {
+  width: 95%;
+  height: auto;
+  border: 1px solid mediumorchid;
+  border-radius: 5px;
+  
+  
+}
+
+#editor {
+  width: 100%;
+  height: 80%;
+  outline: none;
+  padding: 0.25vw;
+}
+
+.Jumbotron {
+  background-image: url(https://cdn.pixabay.com/photo/2018/01/24/18/05/background-3104413_1280.jpg) ;
+  background-size: 1500px;
 }
